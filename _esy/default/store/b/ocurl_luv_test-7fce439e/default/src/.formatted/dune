@@ -1,0 +1,3 @@
+(executable
+ (name OcurlLuvTest)
+ (libraries curl luv))

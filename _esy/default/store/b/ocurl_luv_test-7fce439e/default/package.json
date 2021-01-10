@@ -1,0 +1,17 @@
+{
+  "name": "ocurl-luv-test",
+  "author": "Zach Baylin",
+  "scripts": {
+    "format": "esy bash -c \"dune build @fmt --auto-promote\"",
+    "run": "esy x OcurlLuvTest"
+  },
+  "esy": {
+    "build": "dune build"
+  },
+  "dependencies": {
+    "@opam/ocurl": "^0.9.1",
+    "@opam/luv": "^0.5.6",
+    "@opam/dune": "^2.7.1",
+    "@opam/reason": "^3.6.1"
+  }
+}

@@ -1,0 +1,9 @@
+(executable
+ (name OcurlLuvTest)
+ (package OcurlLuvTest)
+ (public_name OcurlLuvTest)
+ (libraries curl luv))
+
+(install
+ (section bin)
+ (files ))
