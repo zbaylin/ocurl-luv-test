@@ -1,4 +1,0 @@
-#!/bin/sh
-export ESY__NODE_BIN_PATH="/Users/zbaylin/Development/ocurl-luv-test/_esy/default/bin"
-exec "/Users/zbaylin/.asdf/installs/nodejs/12.4.0/bin/node" -r "/Users/zbaylin/Development/ocurl-luv-test/_esy/default/pnp.js" "$@"
-              

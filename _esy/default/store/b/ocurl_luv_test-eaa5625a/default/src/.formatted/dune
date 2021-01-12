@@ -1,5 +1,0 @@
-(executable
- (name OcurlLuvTest)
- (package OcurlLuvTest)
- (public_name OcurlLuvTest)
- (libraries curl luv))

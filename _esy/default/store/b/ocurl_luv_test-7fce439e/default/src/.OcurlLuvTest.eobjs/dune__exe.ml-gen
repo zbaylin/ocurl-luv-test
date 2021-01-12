@@ -1,5 +1,0 @@
-(** @canonical Dune__exe.LuvOcurl *)
-module LuvOcurl = Dune__exe__LuvOcurl
-
-(** @canonical Dune__exe.OcurlLuvTest *)
-module OcurlLuvTest = Dune__exe__OcurlLuvTest
