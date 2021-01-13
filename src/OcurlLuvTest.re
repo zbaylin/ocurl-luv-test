@@ -42,7 +42,8 @@ let handleSocket = (loop: Luv.Loop.t, fd: Unix.file_descr, action: M.poll) => {
       switch (Hashtbl.find_opt(socketPollHandleTbl, fd)) {
       | Some(poll) => poll
       | None =>
-        let luvSocket: Luv.Os_fd.Socket.t = Obj.magic(fd);
+        let luvSocket: Luv.Os_fd.Socket.t =
+          Luv.Os_fd.Socket.from_unix(fd) |> Result.get_ok;
         let poll = Luv.Poll.init_socket(~loop, luvSocket) |> Result.get_ok;
         Hashtbl.replace(socketPollHandleTbl, fd, poll);
         poll;
@@ -93,7 +94,7 @@ let () = {
   M.set_socket_function(mt, handleSocket(loop));
   M.set_timer_function(mt, startTimeout(timer));
 
-  let urls = ["https://zachbayl.in"];
+  let urls = ["https://onivim.io"];
 
   List.iter(addUrl, urls);
 

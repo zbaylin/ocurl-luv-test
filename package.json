@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@opam/ocurl": "^0.9.1",
-    "@opam/luv": "^0.5.6",
+    "@opam/luv": "aantron/luv:luv.opam#e75cf8cb95",
     "@opam/dune": "^2.7.1",
     "@opam/reason": "^3.6.1"
   }
